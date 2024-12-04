@@ -4,7 +4,7 @@ import "../styles/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTag,
-  faUser,
+  //faUser,
   faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
