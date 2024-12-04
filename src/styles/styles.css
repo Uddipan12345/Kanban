@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Kanban Board */
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Ticket Card */
+.card {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card p {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icons */
+.card i {
+  font-size: 1rem;
+  color: #555;
+}
+
+h2 i {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Priority Tag Colors */
+.card p.priority-4 i {
+  color: #e53935; /* Urgent */
+}
+
+.card p.priority-3 i {
+  color: #fb8c00; /* High */
+}
+
+.card p.priority-2 i {
+  color: #fdd835; /* Medium */
+}
+
+.card p.priority-1 i {
+  color: #43a047; /* Low */
+}
+
+.card p.priority-0 i {
+  color: #9e9e9e; /* No Priority */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .kanban-column {
+    width: 100%;
+  }
+}
+
+.icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.no-priority {
+  color: #9e9e9e;
+}
+
+.low-priority {
+  color: #43a047;
+}
+
+.medium-priority {
+  color: #fdd835;
+}
+
+.high-priority {
+  color: #fb8c00;
+}
+
+.urgent-priority {
+  color: #e53935;
+}
+
+.tag-icon {
+  color: #42a5f5;
+}
+
+.column-icon {
+  color: #555;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
